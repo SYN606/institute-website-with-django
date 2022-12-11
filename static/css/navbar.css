@@ -1,0 +1,21 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 1;
+    background-color: var(--bg-navbar);
+    box-shadow: 0em 0em 1em #000;
+}
+
+.navbar-collapse{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-brand{
+    color: var(--nav-brand-color);
+}
+
+.nav-link{
+    color: #fff;
+}
