@@ -2,24 +2,6 @@
   --card-body: #b6caffbd;
 }
 
-/* custom style-sheet */
-.text-bg-secondary,
-.text-bg-primary {
-  border-radius: 5px;
-}
-
-.col-1 svg {
-  aspect-ratio: 1 / 1;
-  width: 28px;
-}
-
-#course-container {
-  background-color: rgb(234, 233, 228);
-}
-
-/* cards */
-
-
 .card-img-top{
   aspect-ratio: 2/1;
 }
@@ -53,4 +35,22 @@
   padding: 0;
   margin: 0;
   width: auto;
+}
+
+.text-bg-secondary,
+.text-bg-primary {
+  border-radius: 5px;
+}
+
+.col-1 svg {
+  aspect-ratio: 1 / 1;
+  width: 28px;
+}
+
+#course-container {
+  background-color: rgb(234, 233, 228);
+}
+
+.course-img{
+width: 17em;
 }

@@ -1,4 +1,9 @@
-/* navbar */
+:root {
+    --bg-navbar: #8eabfd;
+    --nav-brand-color: rgb(33, 39, 53);
+    --nav-link: #fff;
+}
+
 .navbar{
     position: fixed;
     width: 100%;
