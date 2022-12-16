@@ -2,36 +2,36 @@
   --card-body: #b6caffbd;
 }
 
-.card-img-top{
+.card-img-top {
   aspect-ratio: 2/1;
 }
 
-.card-text{
+.card-text {
   font-size: 0.9rem;
 }
-.card{
+.card {
   transition: box-shadow 300ms;
 }
 
-.card:hover{
+.card:hover {
   box-shadow: 0rem 0rem 0.5rem #000;
 }
 
-.card-body{
+.card-body {
   transition: background-color 300ms;
-  background-color: var(--card-body);    
+  background-color: var(--card-body);
 }
 
-.card-body:hover{
+.card-body:hover {
   background-color: #fff;
 }
 
-.row{
+.row {
   gap: 2rem 4rem;
   justify-content: center;
 }
 
-.col-md-4{
+.col-md-4 {
   padding: 0;
   margin: 0;
   width: auto;
@@ -51,6 +51,10 @@
   background-color: rgb(234, 233, 228);
 }
 
-.course-img{
-width: 17em;
+.course-img {
+  width: 17em;
+}
+
+img{
+  width: 17em;
 }
