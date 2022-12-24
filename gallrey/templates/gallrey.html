@@ -1,12 +1,14 @@
 {% extends 'base.html' %}
 
-{% load static %}
-
 {% block title %} Karamraji | Gallrey {% endblock title %}
 
 {% block navbar %} {% include 'navbar.html' %} {% endblock navbar %}
-{% block css %} <link rel="stylesheet" href="{% static 'css/gallrey.css' %}"> {% endblock css %}
 
+{% load static %} 
+
+{% block css %}
+{% static 'css/gallrey.css' %}
+{% endblock css %}
 
 {% block content %}
 
@@ -47,4 +49,6 @@
 
 {% endblock content %}
 
-{% block js %} <script src="{% static 'js/gallrey.js' %}"></script> {% endblock js %}  
+{% block js %}
+{% static 'js/gallrey.js' %}
+{% endblock js %}  
