@@ -1,7 +1,9 @@
 :root {
   --card-body: #b6caffbd;
 }
-
+/* body{
+  background-color: blue;
+} */
 .card-img-top {
   aspect-ratio: 2/1;
 }
