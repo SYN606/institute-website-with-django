@@ -25,3 +25,11 @@ def adca(request):
 
 def eca(request):
     return render(request, 'eca.html')
+
+# icai courses views
+
+def cat(request):
+    return render(request, 'cat.html')
+
+def tally(request):
+    return render(request, 'tally.html')

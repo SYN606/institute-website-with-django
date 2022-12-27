@@ -2,6 +2,41 @@
 
 {% block title %} Karamraji | ICAI Courses {% endblock title %}
 
+{% load static %}
+{% block css %}{% static 'css/icai-courses.css' %}{% endblock css %}
+
 {% block navbar %} {% include 'navbar.html' %} {% endblock navbar %}
 
-{% block content %} <h2> ICAI Courses </h2> {% endblock content %}
+{% block content %} <h2> ICAI Courses </h2> 
+
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            class="card-img-top" alt="404 | Image not found...">
+          <div class="card-body">
+            <h5 class="card-title">CAT</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="{% url 'cat' %}" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            class="card-img-top" alt="404 | Image not found...">
+          <div class="card-body">
+            <h5 class="card-title">Tally</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="{% url 'tally' %}" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

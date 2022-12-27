@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %} Karamraji | ICAI Courses {% endblock title %}
+
+{% load static %}
+{% block css %}{% static 'css/icai-courses.css' %}{% endblock css %}
+
+{% block navbar %} {% include 'navbar.html' %} {% endblock navbar %}
+
+{% block content %} 
+
+<h2> ICAI Courses </h2> 
+    <div class="container">
+        <h3>CAT</h3>
+        <div class="row container-fluid">
+            <div class="col"><b>Duration :</b> 1 year</div>
+            <div class="col"><b>Eligiblity :</b> 12th passed</div>
+        </div>
+        <div class="row container-fluid">
+
+            <div class="col-7">
+                <ul>
+                    <li>
+                        <h4>Semester 1 :</h4>
+                        <p> Fundamentals of Financial Accounting , Applied Business and Industrial Laws, Financial
+                            Accounting-2 and Statutory Compliance.</p>
+                    </li>
+                    <li>
+                        <h4>Semester 2 :</h4>
+                        <p>Fundamentals of computer, Filling of Statutory Returns, Introduction of Costing , Principles and preparation of Cost Statements, Orientation Programme.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3 mx-auto">
+                <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    class="img-fluid" alt="404 | Image not found...">
+            </div>
+        </div>
+    </div>
+{% endblock content %}
