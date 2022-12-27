@@ -54,9 +54,5 @@
 }
 
 .course-img {
-  width: 17em;
-}
-
-img{
-  width: 17em;
+  max-width: 100%;
 }

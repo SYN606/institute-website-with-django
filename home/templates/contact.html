@@ -1,20 +1,25 @@
 {% extends 'base.html' %} 
 {% block title %} Karamraji | Contact Us 
 {% endblock title %} 
+{% load static %}
+{% block css %}{% static 'css/index.css' %}{% endblock css %}
 {% block content %}
 
 <div class="container">
   <h3>Contact Us</h3>
-  <form action="...">
+  <form action="/contact" method="post">
+
+    {% csrf_token %}
+
     <div class="mb-3">
       <label for="name" class="form-label">Name</label>
-      <input type="text" class="form-control" id="name" placeholder="Name" />
+      <input type="text" class="form-control" id="name" name="name" placeholder="Name" />
     </div>
 
     <div class="mb-3">
       <label for="email" class="form-label">Email address</label>
 
-      <input type="email" class="form-control" id="email" placeholder="Email" />
+      <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
 
       <div id="emailHelp" class="form-text">
         We'll never share your email with anyone else.
@@ -36,7 +41,7 @@
         type="number"
         class="form-control"
         id="phone-number"
-        name="phone-number"
+        name="ph_number"
         size="10"
         placeholder="Only 10 digits"
       />
@@ -47,6 +52,7 @@
         id="suggestion"
         class="form-control"
         placeholder="Any Suggestion or Query"
+        name="query"
       ></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>

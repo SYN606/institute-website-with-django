@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block title %} Karamraji | NIELIT Courses - O level {% endblock title %}
+{% load static %}
+{% block css %}{% static 'css/nielit-courses.css' %}{% endblock css %}
+
+{% block navbar %} {% include 'navbar.html' %} {% endblock navbar %}
+
+{% block content %} 
+    <div class="container">
+        <h2>ADCA</h2>
+        <div class="row container-fluid">
+            <div class="col">
+                <h4>Duration : 12 Months</h4>
+            </div>
+            <div class="col">
+                <h4>Eligibility : 12th Passed</h4>
+            </div>
+        </div>
+        <b>A Professional Diploma Course for Web/Graphic Designer and Jr. Software Engineer.</b>
+        <div class="row">
+            <div class="col-7">
+                <p>
+                    Advance Diploma in Computer Application is a 2 semester course and is designed to take students from
+                    basics of computer to the Complexities of Developing Software Applications. This course make
+                    students comfortable with office automation, Graphic Designing, and enhance programming skill
+                    requires in the IT industry. The aim of the course is to produce efficient computer programmers
+                    within short duration to fulfil huge requirement of IT industry. The technical modules of the course
+                    will provide industry standard domain knowledge to the students and help them in the competitive
+                    environment.
+                </p>
+            </div>
+            <div class="col-3 mx-auto">
+                <img src="https://images.pexels.com/photos/1714205/pexels-photo-1714205.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    class="img-fluid" alt="404 | Image not found...">
+            </div>
+            <h3>ADCA Course Syllabus - Per Semester :</h3>
+            <ol>
+                <li>
+                    <b>ADCA Sem - 1 - Duration : 06 Months </b>
+                    <ul class="syllabus-list">
+                        <li>Computer Fundamentals</li>
+                        <li>Microsoft Office 2007</li>
+                        <li>Libre Office</li>
+                        <li>Internet & Email</li>
+                        <li>Computer Network & Multimedia Concept</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>ADCA Sem - 2 - Duration : 06 Months </b>
+                    <ul class="syllabus-list">
+                        <li>Tally 5.4</li>
+                        <li>Visual Basic</li>
+                        <li>C Programming</li>
+                        <li>C++ Programming</li>
+                        <li>Coral Draw</li>
+                        <li>Photoshop</li>
+                    </ul>
+
+                </li>
+            </ol>
+            <p> <b>Project :</b> (For self-assessment of students & assessment by faculty.)</p>
+        </div>
+    </div>
+{% endblock content %}

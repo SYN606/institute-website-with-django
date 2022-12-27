@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+
+{% block title %} Karamraji | NIELIT Courses - O level {% endblock title %}
+{% load static %}
+{% block css %}{% static 'css/nielit-courses.css' %}{% endblock css %}
+
+{% block navbar %} {% include 'navbar.html' %} {% endblock navbar %}
+
+{% block content %} 
+    <div class="container">
+        <h2>&apos; O &apos; Level</h2>
+        <div class="row container-fluid">
+            <div class="col">
+                <h4>Duration : 12 Months</h4>
+            </div>
+            <div class="col">
+                <h4>Eligibility : 12th Passed</h4>
+            </div>
+        </div>
+        <b>A Scheme of AICTE & Department of IT Govt. of India</b>
+        <div class="row">
+            <div class="col-7">
+                <p> DOEACC ‘O’ Level Course is a foundation Course of DOEACC Society in the field of Information
+                    Technology.
+                    The
+                    duration of the course is 1 Year (2 semesters of 6 months each). The course starts in the month of
+                    January
+                    and July every year.
+                    <br>
+                    "O" Level courses designed and recognized by the Govt. of India for the purpose of employment.
+                    Recognised by
+                    : Central Govt. Ministry of HRD, PSUs, Banks, National & Multinational Companies. As per MoU between
+                    DOEACC
+                    and USA, UK, CAIT, MITI-Japan are eligible for working visas MNC's, Banks, Education, Insurance,
+                    Software
+                    industries and Government sector prefer to employee 'O' and 'A' level Holders.
+                </p>
+            </div>
+            <div class="col-3 mx-auto">
+                <img src="https://images.pexels.com/photos/777001/pexels-photo-777001.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    class="img-fluid" alt="404 | Image not found...">
+            </div>
+        </div>
+        <h5>Syllabus :</h5>
+        <ul class="syllabus-list">
+            <li><b>M1-R5 : </b>Information Technology Tools and Network Basis</li>
+            <li><b>M2-R5 : </b>Web Designing & Publishing</li>
+            <li><b>M3-R5 : </b>Programming and Problem Solving through Python</li>
+            <li><b>M4-R5 : </b>Internet of Things and its Applications</li>
+            <li><b>M5-R5 : </b>Practical based on M1-R5, M2- R5 , M3-R5 and M4-R5</li>
+            <li><b>M5-R5 : </b>Project</li>
+        </ul>
+        <h5>Project Work :</h5>
+        <p> Projects in the DOEACC Scheme are an integral part of the curriculum to qualify for a certificate. There is
+            one project after the completion of 2nd semester. No marks are assigned for this, but Candidates are
+            required to carry out the project successfully. The head of the Institute will submit a project completion
+            certificate in the prescribed format for issuing pass certificate to DOEACC Society for the students who
+            have cleared all the papers and complete the project work.
+        </p>
+        <h3>Examination : </h3>
+        <ol>
+            <li>
+                <h5>Theory Examinations :</h5>
+                <p>NIELIT “O” - Level theory examination is conducted twice in a year (in the month of January and July)
+                    by NIELIT, New Delhi. There is a number of examination centres all over India. The list of exam
+                    centres will be available while collecting exam form. Student can choose one of the exam centre
+                    according to their convenience.</p>
+            </li>
+            <li>
+                <h5>Practical Examinations : </h5>
+                <p>The is one practical paper for NIELIT “O” Level Course. Appeared or appearing all the theory papers
+                    is the necessary condition for the practical examination. Practical Examination is conducted at the
+                    Institute under the supervision of DOEACC Society, New Delhi. Students need to provide the option
+                    for appearing in practical examination while filling up exam form with payment of additional
+                    practical examination fee as per centre. Duration of each practical examination is 3 hours.</p>
+            </li>
+        </ol>
+        <p>Result of NIELIT ‘O’ Level examination is published in the NIELIT website <a
+                href="https://student.nielit.gov.in/">https://student.nielit.gov.in</a> normally after 2 months
+            of completion of the exam. Students can check their result from this website and download. Students can also
+            ask for result of the examination to the Institute. Results will be sent to the candidates from NIELIT
+            Society individually. The result will be provided in the form of Grade. The mark scored in practical paper
+            is not counted for calculating overall grade of the exam but, clearing practical paper is the necessary
+            criteria for awarding the certificate.
+        </p>
+        <h5>Following is the Gradation system of the above NIELIT Courses :</h5>
+        <table class="table">
+            <thead class="table-primary">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Marks Scored</th>
+                    <th scope="col">Grade to be awarded</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-success">
+                    <th scope="row">1</th>
+                    <td>85% or above</td>
+                    <td>S</td>
+                </tr>
+                <tr class="table-success">
+                    <th scope="row">2</th>
+                    <td>75% - 84%</td>
+                    <td>A</td>
+                </tr>
+                <tr class="table-secondary">
+                    <th scope="row">3</th>
+                    <td>65% - 74%</td>
+                    <td>B</td>
+                </tr>
+                <tr class="table-secondary">
+                    <th scope="row">4</th>
+                    <td>55% - 64%</td>
+                    <td>C</td>
+                </tr>
+                <tr class="table-secondary">
+                    <th scope="row">5</th>
+                    <td>50% - 54%</td>
+                    <td>D</td>
+                </tr>
+                <tr class="table-danger">
+                    <th scope="row">6</th>
+                    <td>Below 50%</td>
+                    <td>Failed</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><b>  Re-totalling of marks can be requested within one month from the date of announcement of the result. The
+                application along with requisite fee of Rs. 200/- per module/paper should send directly to Examination
+                Section, NIELIT Bhawan,Plot No. 3, PSP Pocket, Sector-8,Dwarka, New Delhi-110077. If any correction is
+                to be made, it will be updated to student’s result of the examination.
+            </b>
+        </p>
+    </div>
+{% endblock content %}

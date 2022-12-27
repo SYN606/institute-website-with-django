@@ -1,7 +1,80 @@
 {% extends 'base.html' %}
 
-{% block title %} Karamraji | NIELIT Courses {% endblock title %}
+{% block title %} Karamraji | NIELIT Courses - O level {% endblock title %}
+{% load static %}
+{% block css %}{% static 'css/nielit-courses.css' %}{% endblock css %}
 
 {% block navbar %} {% include 'navbar.html' %} {% endblock navbar %}
 
-{% block content %} <h2> NIELIT Courses </h2> {% endblock content %}
+{% block content %} 
+<h2> NIELIT Courses </h2> 
+
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://images.pexels.com/photos/777001/pexels-photo-777001.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            class="card-img-top" alt="404 | Image not found...">
+          <div class="card-body">
+            <h5 class="card-title">O Level</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="{% url 'olevel' %}" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://images.pexels.com/photos/1714205/pexels-photo-1714205.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            class="card-img-top" alt="404 | Image not found...">
+          <div class="card-body">
+            <h5 class="card-title">ADCA</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="{% url 'adca' %}" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            class="card-img-top" alt="404 | Image not found...">
+          <div class="card-body">
+            <h5 class="card-title">CCC</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="{% url 'ccc' %}" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            class="card-img-top" alt="404 | Image not found...">
+          <div class="card-body">
+            <h5 class="card-title">CCC+</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="{% url 'ccc_plus' %}" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://images.pexels.com/photos/6424586/pexels-photo-6424586.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            class="card-img-top" alt="404 | Image not found...">
+          <div class="card-body">
+            <h5 class="card-title">ECC</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="{% url 'eca' %}" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}

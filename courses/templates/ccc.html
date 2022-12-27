@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %} Karamraji | NIELIT Courses - CCC {% endblock title %}
+{% load static %}
+{% block css %}{% static 'css/nielit-courses.css' %}{% endblock css %}
+
+{% block navbar %} {% include 'navbar.html' %} {% endblock navbar %}
+
+{% block content %} 
+    <div class="container">
+        <h2>CCC</h2>
+        <div class="row container-fluid">
+            <div class="col">
+                <h4>Duration : 2 Months</h4>
+            </div>
+            <div class="col">
+                <h4>Eligibility : 8th Passed</h4>
+            </div>
+        </div>
+        <b>A Scheme of AICTE & Department of IT Govt. of India</b>
+        <div class="row">
+            <div class="col-7">
+                <p>
+                    CCC (Course on Computer Concepts) course is launched by NIELIT (National Institute of Electronics
+                    and Information Technology) and they are designed to impart a basic level IT Literacy to the common
+                    man with more emphasis on practical training. These Courses are basically designed for 8th Standard
+                    passed students.
+                </p>
+            </div>
+            <div class="col-3 mx-auto">
+                <img src="https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    class="img-fluid" alt="404 | Image not found...">
+            </div>
+        </div>
+        <h4>Syllabus for CCC :</h4>
+        <ul>
+            <li>Introduction to Computer</li>
+            <li>Introduction to GUI Based Operating System</li>
+            <li>Elements of Word Processing(LibreOffice Writer)</li>
+            <li>Spreadsheets Concept of Ms-Excel</li>
+            <li>Introduction to Internet, WWW and Web browsers</li>
+            <li>Communication and Collaboration</li>
+            <li>Application of Digital Financial Services</li>
+            <li>Application of Presentations(LibreOffice Impress)</li>
+        </ul>
+    </div>
+{% endblock content %}
