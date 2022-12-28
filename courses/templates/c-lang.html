@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %} Karamraji | Short Term Courses {% endblock title %}
+
+{% load static %}
+
+{% block css %}{% static 'css/st-courses.css' %}{% endblock css %}
+
+{% block navbar %} {% include 'navbar.html' %} {% endblock navbar %}
+
+{% block content %} 
+
+    <div class="container">
+        <h3>Programming In C</h3>
+        <div class="row container-fluid">
+            <div class="col"><b>Duration :</b> 2 Months</div>
+            <div class="col"><b>Eligiblity :</b> 12th Passed</div>
+        </div>
+        <div class="row container-fluid">
+            <div class="col-7">
+                <p>The C Programming Language course is designed to give you everything you need to become a productive
+                    C programmer. C is a simple yet powerful multi-purpose programming language that sits at the heart
+                    of virtually every computing device imaginable. It offers unparalleled performance and supports the
+                    widest breadth of devices and platforms. It is ideally suited to environments with strict, real-time
+                    constraints like kernel-mode and in particular to embedded systems programming. Whether you plan on
+                    learning C as a foundation for C++ or to prepare yourself for embedded programming, this course will
+                    give you a solid foundation and show you that C need not be feared.</p>
+            </div>
+
+            <div class="col-3 mx-auto">
+                <img src="https://images.pexels.com/photos/1921326/pexels-photo-1921326.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    class="img-fluid" alt="404 | Image not found...">
+            </div>
+        </div>
+        <h4>Syllabus</h4>
+        <ul class="syllabus-list">
+            <li>An Overview Of C</li>
+            <li>Variable & Data Types</li>
+            <li>Decision Control Statement</li>
+            <li>Iteration Constructs (Loop control statement)</li>
+            <li>Storage Classes Specifiers</li>
+            <li>Array</li>
+            <li>Pointers</li>
+            <li>Function</li>
+            <li>String Handling</li>
+            <li>Structures and Unions</li>
+            <li>Dynamic Memory allocation</li>
+            <li>Linked List</li>
+            <li>Preprocessor</li>
+            <li>Project Code for Calculator Application</li>
+            <li>Project code for Bank Application</li>
+            <li>Interview Questions</li>
+        </ul>
+        <p><b>Assignment : </b>Self-Assessment by Faculty</p>
+    </div>
+{% endblock content %}

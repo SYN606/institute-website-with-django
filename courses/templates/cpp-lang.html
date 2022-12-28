@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block title %} Karamraji | Short Term Courses {% endblock title %}
+
+{% load static %}
+
+{% block css %}{% static 'css/st-courses.css' %}{% endblock css %}
+
+{% block navbar %} {% include 'navbar.html' %} {% endblock navbar %}
+
+{% block content %} 
+
+    <div class="container">
+        <h3>Programming In C++</h3>
+        <div class="row container-fluid">
+            <div class="col"><b>Duration :</b> 2 Months</div>
+            <div class="col"><b>Eligiblity :</b> 12th Passed</div>
+        </div>
+        <div class="row container-fluid">
+            <div class="col-7">
+                <p>C++ is an object-oriented programming language that was first developed by Bjarne Stroustrup. It was
+                    originally created to be an extension of the C language, which is a middle-level language, and these
+                    roots are still present today. C++ can be developed in the object-oriented style, or in the C-style,
+                    making it a truly hybrid language. This path will take you from the very basics of programming using
+                    C++ and will vault you forward into creating rich applications for the Windows operating system. You
+                    can also create platform independent desktop applications in C++ using either the QT or Cinder
+                    frameworks. Those courses are in our library but not listed on this path.</p>
+            </div>
+            <div class="col-3 mx-auto">
+                <img src="https://images.pexels.com/photos/325111/pexels-photo-325111.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    class="img-fluid" alt="404 | Image not found...">
+            </div>
+        </div>
+        <h4>Syllabus</h4>
+        <ul class="syllabus-list">
+            <li>C++ Overview</li>
+            <li>Variable & Data Types</li>
+            <li>Decision Control Statement</li>
+            <li>Iteration Constructs (Loop control statement)</li>
+            <li>Input and Output</li>
+            <li>Array</li>
+            <li>Pointers</li>
+            <li>Function</li>
+            <li>OOPS</li>
+            <li>Classes in C++</li>
+            <li>Operator Overloading</li>
+            <li>Initialization and Assignment</li>
+            <li>Storage Management</li>
+            <li>Friendship & Inheritance</li>
+            <li>Polymorphism</li>
+            <li>Namespaces</li>
+            <li>Exceptions Handling</li>
+            <li>Processor Directives</li>
+            <li>I/O with Files</li>
+        </ul>
+        <p><b>Assignment : </b>Self-Assessment by Faculty</p>
+    </div>
+{% endblock content %}

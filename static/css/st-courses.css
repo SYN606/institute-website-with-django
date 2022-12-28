@@ -1,0 +1,15 @@
+.container {
+  /* border: 2px solid black; */
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+.col {
+  /* border: 2px solid salmon; */
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.syllabus-list {
+    list-style-type: "✓"; 
+}

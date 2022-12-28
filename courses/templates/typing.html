@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %} Karamraji | Short Term Courses {% endblock title %}
+
+{% load static %}
+
+{% block css %}{% static 'css/st-courses.css' %}{% endblock css %}
+
+{% block navbar %} {% include 'navbar.html' %} {% endblock navbar %}
+
+{% block content %} 
+
+    <div class="container">
+        <h3>Typing in English</h3>
+        <div class="row container-fluid">
+            <div class="col"><b>Duration :</b> 2 Months</div>
+            <div class="col"><b>Eligiblity :</b> 10th Passed</div>
+        </div>
+        <div class="row container-fluid">
+            <div class="col-7">
+                <p>Typing classes are available for individuals who wish to enhance their keyboarding skills and become
+                    more efficient typists. They can be completed as standalone courses or as part of a full college
+                    program. Typically, typing courses are offered through certificate programs, but they can also be
+                    offered in some associate's or bachelor's degree programs that offer office technology or
+                    administration.</p>
+            </div>
+            <div class="col-3 mx-auto">
+                <img src="https://images.pexels.com/photos/3183202/pexels-photo-3183202.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    class="img-fluid" alt="404 | Image not found...">
+            </div>
+        </div>
+        <h3>Syllabus</h3>
+        <ul class="syllabus-list">
+            <li>Home Row Keys</li>
+            <li>Top-Row Keys</li>
+            <li>Bottom-Row Keys</li>
+            <li>Fourth-Row Number and Symbol Keys</li>
+            <li>Shift Keys, Enter and Backspace Keys</li>
+            <li>Tab and Caps Lock Keys</li>
+            <li>Shortcut Keys, Mastering the Keys</li>
+            <li>Timed Tests</li>
+            <li>Digit placement and positioning</li>
+            <li>Key functions</li>
+            <li>Software literacy</li>
+            <li>Typing accuracy</li>
+            <li>Speed-typing</li>
+            <li>Practical applications</li>
+        </ul>
+        <p><b>Assignment : </b>Self-Assessment by Faculty</p>
+    </div>
+{% endblock content %}

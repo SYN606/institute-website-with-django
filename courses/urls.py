@@ -19,4 +19,12 @@ urlpatterns = [
 
     path('cat', views.cat, name='cat'),
     path('tally', views.tally, name='tally'),
+
+    # short-term courses routes
+
+    path('clang', views.c_lang, name='clang'),
+    path('cpp', views.cpp, name='cpp'),
+    path('dca', views.dca, name='dca'),
+    path('webdev', views.webdev, name='webdev'),
+    path('typing', views.typing, name='typing'),
 ]

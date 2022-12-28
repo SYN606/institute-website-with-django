@@ -2,6 +2,82 @@
 
 {% block title %} Karamraji | Short Term Courses {% endblock title %}
 
+{% load static %}
+
+{% block css %}{% static 'css/st-courses.css' %}{% endblock css %}
+
 {% block navbar %} {% include 'navbar.html' %} {% endblock navbar %}
 
-{% block content %} <h2> Short Term Courses </h2> {% endblock content %}
+{% block content %} 
+
+<div class="container">
+    <h2> Short Term Courses </h2> 
+    <hr>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            class="card-img-top" alt="404 | Image not found...">
+          <div class="card-body">
+            <h5 class="card-title">DCA</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="dca.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            class="card-img-top" alt="404 | Image not found...">
+          <div class="card-body">
+            <h5 class="card-title">C Programming</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="c-lang.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            class="card-img-top" alt="404 | Image not found...">
+          <div class="card-body">
+            <h5 class="card-title">C++ Programming</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="cpp-lang.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            class="card-img-top" alt="404 | Image not found...">
+          <div class="card-body">
+            <h5 class="card-title">Web Developement</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="web-dev.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            class="card-img-top" alt="404 | Image not found...">
+          <div class="card-body">
+            <h5 class="card-title">Typing</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="typing.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}

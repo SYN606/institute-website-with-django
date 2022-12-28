@@ -33,3 +33,21 @@ def cat(request):
 
 def tally(request):
     return render(request, 'tally.html')
+
+
+# short-term views
+
+def c_lang(request):
+    return render(render, 'c-lang.html')
+
+def cpp(request):
+    return render(render, 'cpp-lang.html')
+
+def webdev(request):
+    return render(render, 'web-dev.html')
+
+def typing(request):
+    return render(render, 'typing.html')
+
+def dca(request):
+    return render(render, 'dca.html')
