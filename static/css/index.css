@@ -1,9 +1,7 @@
 :root {
   --card-body: #b6caffbd;
+  --card-col-primary: rgb(191, 215, 250);
 }
-/* body{
-  background-color: blue;
-} */
 .card-img-top {
   aspect-ratio: 2/1;
 }
@@ -50,9 +48,13 @@
 }
 
 #course-container {
-  background-color: rgb(234, 233, 228);
+  background-color: var(--card-col-primary);
+  border-radius: 7px;
 }
-
+#extra {
+  background-color: var(--card-col-primary);
+  border-radius: 7px;
+}
 .course-img {
   max-width: 100%;
 }

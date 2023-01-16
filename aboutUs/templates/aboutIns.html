@@ -1,7 +1,38 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block title %} Karamraji | About Institute {% endblock title %}
-
 {% block navbar %} {% include 'navbar.html' %} {% endblock navbar %}
+{% block content %}
 
-{% block content %} <h2> About Institute </h2> {% endblock content %}
+<div class="container mb-5 mt-5">
+  <h2>About Institute</h2>
+  <hr />
+  <p class="para mt-5">
+    <b>Karmraji institute of Computer Science & IT (KICS & IT)</b> is under the
+    management of Karamraji Thakurdeen Smarak, Sikshan Sansthan,(KTSSS) which
+    stands registered with U.P. Govt. Administration under Act 21 , 1860. The
+    compliances of the sansthan is non-sectarian, its main object is to spread
+    education and provide employment to the unemployed.
+    <br />
+    The motto of the sansthan is <b>“Servire Deo Est Servite Homini”</b> which
+    means <b>“SERVICE TO HUMANITY IS SERVICE TO GOD”</b>. The institute aims at
+    spreading computer education among the poor and socially backward sections
+    of the society. The institute run on no profit no loss basis. Karamraji
+    Institute of Computer Science & IT (KICS & IT) is Accrediated By Department
+    of Electronics Accreditation of Computer Courses (DOEACC) with Full ACCR No.
+    01733 offered DOEACC ‘O’ LEVEL Computer Course. DOEACC Society (An ISO
+    9001-2000 certified body) a joint Scheme of
+    <b>All India Council for Technical Education (AICTE)</b> and
+    <b>Department of Information Technology (DIET)</b>. <br />
+    <br />
+    An Autonomous Body of Department of Information Technology, Ministry of
+    Communication & Information Technology. Govt. of India Electronic Niketan 6
+    CGO Complex, New Delhi-110003.
+  </p>
+  <div class="container">
+    <img class="img-fluid mt-5 rounded mx-auto"
+      src="{% static 'images/aboutins.jpg' %}"
+      alt="404 | Image Not Found" />
+  </div>
+</div>
+{% endblock content %}

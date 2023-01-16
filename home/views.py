@@ -3,8 +3,13 @@ from django.http import HttpResponse
 
 from .models import User
 
+
 def index(request):
-    return render(request, 'index.html')
+    return render(request, "index.html")
+
+
+def handle_404(request, exception):
+    return render(request, "404.html")
 
 
 def contact(request):
@@ -16,15 +21,10 @@ def contact(request):
         email = request.POST["email"]
         query = request.POST["query"]
 
-        user_query = User(
-            name = name,
-            ph_number = ph_number,
-            email = email,
-            query = query
-        )
+        user_query = User(name=name, ph_number=ph_number, email=email, query=query)
 
         user_query.save()
         return HttpResponse("Query uploaded successfully")
-    
+
     else:
-        return render(request, 'contact.html')
+        return render(request, "contact.html")

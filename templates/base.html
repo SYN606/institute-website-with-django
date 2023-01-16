@@ -15,8 +15,9 @@
     {% comment %} custom css {% endcomment %}
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}" />
-    <link rel="stylesheet" type="text/css" href="{% block css %} {% endblock css %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" />
+    
+    <link rel="stylesheet" type="text/css" href="{% block css %}{% endblock css %}" />
 
     <title>{% block title %}{% endblock title %}</title>
   </head>
