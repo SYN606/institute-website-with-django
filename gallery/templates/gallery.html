@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %} Karamraji | Gallery {% endblock title %}
+{% block navbar %} {% include 'navbar.html' %} {% endblock navbar %}
+{% load static %}
+{% block css %}{% static 'css/gallrey.css' %}{% endblock css %}
+
+{% block content %}
+
+<div class="container-sm">
+    <h1 class="gallery-h1">Karamraji Gallery</h1>
+    <div class="gallery-container">
+        <div class="img-container"><img src="..." alt="" id="img-thumbnail">
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

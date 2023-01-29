@@ -33,10 +33,10 @@
   overflow: unset;
   z-index: 1;
 }
-
+/* 
 .img-thumbnail {
   object-fit: cover;
-}
+} */
 
 .lightbox {
   display: flex;

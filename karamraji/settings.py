@@ -1,11 +1,7 @@
 import os
-
 from pathlib import Path
 
-
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-
 
 
 SECRET_KEY = 'django-insecure-n2!iv4*crzihtyf2d6@m+u9+xg#je3x%oc3d*16zp4u4j&^=7d'
@@ -17,6 +13,7 @@ ALLOWED_HOSTS = ["*"]
 
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -26,7 +23,7 @@ INSTALLED_APPS = [
     'home',
     'courses',
     'aboutUs',
-    'gallrey',
+    'gallery'
 ]
 
 MIDDLEWARE = [
@@ -60,9 +57,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'karamraji.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -89,9 +83,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
-# Internationalization
-# https://docs.djangoproject.com/en/4.1/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 

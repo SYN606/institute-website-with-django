@@ -1,31 +1,45 @@
 {% extends 'base.html' %}
 {% block title %} Karamraji | 404 Not Found {% endblock title %}
 {% load static %}
-{% block css %}{% static 'css/404.css' %}{% endblock css %}
+{% block css %}{% static 'css/404.scss' %}{% endblock css %}
 {% block content %}
 
-<section class="page_404">
-	<div class="container">
-		<div class="row">	
-		<div class="col-sm-12 ">
-		<div class="col-sm-10 col-sm-offset-1  text-center">
-		<div class="four_zero_four_bg">
-			<h1 class="text-center ">404</h1>
-		</div>
-		
-		<div class="contant_box_404">
-		<h3 class="h2">
-		Look like you're lost
-		</h3>
-		
-		<p>the page you are looking for not avaible!</p>
-		
-		<a href="{% url 'index' %}" class="link_404">Go to Home</a>
-	</div>
-		</div>
-		</div>
-		</div>
-	</div>
-</section>
+<div class="box">
+	<div class="box__ghost">
+		<div class="symbol"></div>
+		<div class="symbol"></div>
+		<div class="symbol"></div>
+		<div class="symbol"></div>
+		<div class="symbol"></div>
+		<div class="symbol"></div>
 
+		<div class="box__ghost-container">
+			<div class="box__ghost-eyes">
+				<div class="box__eye-left"></div>
+				<div class="box__eye-right"></div>
+			</div>
+			<div class="box__ghost-bottom">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<div class="box__ghost-shadow"></div>
+	</div>
+
+	<div class="box__description">
+		<div class="box__description-container">
+			<div class="box__description-title">Whoops!</div>
+			<div class="box__description-text">It seems like we couldn't find the page you were looking for</div>
+		</div>
+
+		<a href="https://codepen.io/diogo_ml_gomes/" target="_blank" class="box__button">Go back</a>
+
+	</div>
+
+</div>
 {% endblock content %}
+
+{% block js %}{% static 'js/404.js' %}{% endblock js %}
