@@ -9,8 +9,9 @@
 <div class="container-sm">
     <h1 class="gallery-h1">Karamraji Gallery</h1>
     <div class="gallery-container">
-        <div class="img-container"><img src="..." alt="" id="img-thumbnail">
-        </div>
+        {% for img in image %}
+            <div class="img-container"><img src="media/{{ img.image }}" alt="" id="img-container"></div>
+        {% endfor %}
     </div>
 </div>
 

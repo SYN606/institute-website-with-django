@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class User(models.Model):
+class User_query(models.Model):
 
     name = models.CharField(max_length=100, null=False)
     ph_number = models.IntegerField(default=0)

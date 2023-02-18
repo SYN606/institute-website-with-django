@@ -5,5 +5,8 @@ from .models import *
 
 
 def gallery(request):
-    return render(request, "gallery.html")
+
+    image = Gallery.objects.all()
+    context = {'image' : image}
+    return render(request, "gallery.html", context)
 

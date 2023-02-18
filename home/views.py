@@ -21,7 +21,7 @@ def contact(request):
         email = request.POST["email"]
         query = request.POST["query"]
 
-        user_query = User(name=name, ph_number=ph_number, email=email, query=query)
+        user_query = User_query(name=name, ph_number=ph_number, email=email, query=query)
 
         user_query.save()
         return HttpResponse("Query uploaded successfully")
