@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/home/syn/Desktop/syn/Django projects/karamraji/env/bin/python" "$0" "$@"
+'''exec' "/home/g11ost/Desktop/syn/Django projects/project karamraji/env/bin/python" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re
